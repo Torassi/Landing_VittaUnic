@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>VittaUnic | Odontologia Avançada — Dr. Fernando Gonçalves</title>
+  <meta name="description" content="VittaUnic Odontologia Avançada. Tratamentos odontológicos com tecnologia, conforto e atendimento humanizado conduzidos pelo Dr. Fernando Gonçalves. Agende sua avaliação." />
+  <meta name="author" content="VittaUnic" />
+  <meta name="theme-color" content="#3e5d7d" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="VittaUnic | Odontologia Avançada" />
+  <meta property="og:description" content="Tratamentos odontológicos com o Dr. Fernando Gonçalves. Tecnologia, conforto e cuidado humanizado." />
+  <meta property="og:image" content="img/vittaunic.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="img/vittaunic.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Barra de progresso de leitura -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo" aria-label="VittaUnic — página inicial">
+        <img src="img/vittaunicfundobranco.png" alt="VittaUnic Odontologia Avançada" />
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Início</a></li>
+          <li><a href="#tratamentos" class="nav__link">Tratamentos</a></li>
+          <li><a href="#resultados" class="nav__link">Resultados</a></li>
+          <li><a href="#dr-fernando" class="nav__link">Dr. Fernando</a></li>
+          <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+          <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn--accent header__cta" data-link="whatsapp">
+        <span class="btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></svg>
+        </span>
+        Agendar Consulta
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <span class="hero__orb hero__orb--1" aria-hidden="true"></span>
+    <span class="hero__orb hero__orb--2" aria-hidden="true"></span>
+    <div class="container hero__inner">
+      <div class="hero__content reveal" data-reveal="left">
+        <span class="badge">Odontologia Avançada</span>
+        <h1 class="hero__title">
+          Um sorriso <span class="text-accent">único</span>, cuidado por quem entende de você
+        </h1>
+        <p class="hero__text">
+          Na <strong>VittaUnic</strong>, o Dr. Fernando Gonçalves une tecnologia,
+          planejamento individual e um atendimento humanizado para transformar
+          a sua saúde bucal com segurança e naturalidade.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#" class="btn btn--accent" data-link="whatsapp">
+            Quero minha avaliação
+          </a>
+          <a href="#" class="btn btn--ghost" data-link="instagram">
+            Ver no Instagram
+          </a>
+        </div>
+
+        <ul class="hero__highlights">
+          <li><strong>+10 anos</strong><span>de experiência clínica</span></li>
+          <li><strong>Tecnologia</strong><span>de diagnóstico avançado</span></li>
+          <li><strong>Atendimento</strong><span>humanizado e individual</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__media reveal" data-reveal="right">
+        <div class="hero__photo">
+          <img src="img/Fernando.jpg" alt="Dr. Fernando Gonçalves em atendimento na VittaUnic" width="640" height="800" fetchpriority="high" />
+        </div>
+        <div class="hero__card">
+          <strong>Dr. Fernando Gonçalves</strong>
+          <span>Cirurgião-Dentista</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS (contador) ===================== -->
+  <section class="stats" aria-label="Números da VittaUnic">
+    <div class="container stats__grid">
+      <div class="stat reveal">
+        <div class="stat__num" data-count="5" data-suffix="+">0</div>
+        <span class="stat__label">Anos de experiência</span>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="5000" data-suffix="+">0</div>
+        <span class="stat__label">Sorrisos cuidados</span>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="15" data-suffix="+">0</div>
+        <span class="stat__label">Tipos de tratamento</span>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="100" data-suffix="%">0</div>
+        <span class="stat__label">Atendimento humanizado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS (faixa) ===================== -->
+  <section class="trust">
+    <div class="container trust__grid">
+      <div class="trust__item reveal">
+        <div class="trust__icon">🦷</div>
+        <h3>Diagnóstico preciso</h3>
+        <p>Avaliação completa com tecnologia para um plano sob medida.</p>
+      </div>
+      <div class="trust__item reveal">
+        <div class="trust__icon">💎</div>
+        <h3>Estética natural</h3>
+        <p>Resultados harmônicos que respeitam o seu rosto e sorriso.</p>
+      </div>
+      <div class="trust__item reveal">
+        <div class="trust__icon">🤝</div>
+        <h3>Cuidado humanizado</h3>
+        <p>Acolhimento em cada etapa, do primeiro contato ao pós-tratamento.</p>
+      </div>
+      <div class="trust__item reveal">
+        <div class="trust__icon">🛡️</div>
+        <h3>Segurança e biossegurança</h3>
+        <p>Protocolos rigorosos para o seu conforto e tranquilidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRATAMENTOS ===================== -->
+  <section class="section" id="tratamentos">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">O que fazemos</span>
+        <h2 class="section__title">Nossos tratamentos</h2>
+        <p class="section__subtitle">
+          Soluções completas em odontologia, sempre planejadas de forma individual
+          para alcançar o melhor resultado para você.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-1.6 0-2.4.7-3.9.7C6.3 3.7 5 5 5 7.4c0 2 .8 3.1 1.2 5.4.3 1.7.4 5.7 2 5.7 1.3 0 1.2-3 1.9-5.2.2-.7.4-1.2 1.9-1.2"/><path d="M12 12.1c1.5 0 1.7.5 1.9 1.2.7 2.2.6 5.2 1.9 5.2 1.6 0 1.7-4 2-5.7.4-2.3 1.2-3.4 1.2-5.4C20 5 18.7 3.7 16.9 3.7 15.4 3.7 14.6 4.4 13 4.4"/></svg>
+          </div>
+          <h3>Implantes Dentários</h3>
+          <p>Recupere a segurança para sorrir e mastigar com soluções fixas e duradouras.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.5 3.6 1.9 5 5.5 5.5C13.9 9 12.5 10.4 12 14c-.5-3.6-1.9-5-5.5-5.5C10.1 8 11.5 6.6 12 3Z"/><path d="M18.5 14c.2 1.6.9 2.3 2.5 2.5-1.6.2-2.3.9-2.5 2.5-.2-1.6-.9-2.3-2.5-2.5 1.6-.2 2.3-.9 2.5-2.5Z"/></svg>
+          </div>
+          <h3>Clareamento Dental</h3>
+          <p>Um sorriso mais branco e iluminado com acompanhamento profissional.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7.5h16"/><rect x="5.2" y="9" width="3.2" height="7" rx="1.4"/><rect x="10.4" y="9" width="3.2" height="7" rx="1.4"/><rect x="15.6" y="9" width="3.2" height="7" rx="1.4"/></svg>
+          </div>
+          <h3>Ortodontia</h3>
+          <p>Dentes alinhados e mordida saudável com aparelhos e alinhadores modernos.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12l3 5-9 11L3 9z"/><path d="M3 9h18"/><path d="M9 4 6 9l6 11"/><path d="M15 4l3 5-6 11"/></svg>
+          </div>
+          <h3>Facetas Dentárias</h3>
+          <p>Estética e harmonia para transformar o seu sorriso de forma natural.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.7-3.2 7.8-7 9-3.8-1.2-7-4.3-7-9V6z"/><path d="M9 12l2 2 4-4.5"/></svg>
+          </div>
+          <h3>Prevenção & Limpeza</h3>
+          <p>Cuidado contínuo para manter a sua saúde bucal sempre em dia.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8 8 0 1 1-2.4-5.7"/><path d="M20 3.5v4.2h-4.2"/></svg>
+          </div>
+          <h3>Reabilitação Oral</h3>
+          <p>Devolvemos função e estética em casos complexos com planejamento completo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESULTADOS ===================== -->
+  <section class="section section--alt" id="resultados">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">Casos reais</span>
+        <h2 class="section__title">Resultados que transformam sorrisos</h2>
+        <p class="section__subtitle">
+          Trabalhos realizados pelo Dr. Fernando Gonçalves na VittaUnic.
+          Estética, função e naturalidade em cada detalhe.
+        </p>
+      </div>
+
+      <div class="results">
+        <figure class="result reveal">
+          <div class="result__media">
+            <img src="img/dentes1.jpg" alt="Antes e depois de tratamento estético na VittaUnic" loading="lazy" />
+            <span class="result__tag">Antes &amp; Depois</span>
+          </div>
+          <figcaption>Clareamento e harmonização do sorriso</figcaption>
+        </figure>
+        <figure class="result reveal">
+          <div class="result__media">
+            <img src="img/dentes2.jpg" alt="Resultado de reabilitação estética dental na VittaUnic" loading="lazy" />
+            <span class="result__tag">Resultado</span>
+          </div>
+          <figcaption>Reabilitação estética com acabamento natural</figcaption>
+        </figure>
+      </div>
+
+      <p class="results__note reveal">
+        *Resultados podem variar de acordo com cada caso. Agende uma avaliação para o seu plano individual.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== DR. FERNANDO ===================== -->
+  <section class="doctor" id="dr-fernando">
+    <div class="container doctor__inner">
+      <div class="doctor__media reveal" data-reveal="left">
+        <img class="is-flipped" src="img/Fernando_exec1.jpg" alt="Dr. Fernando Gonçalves, cirurgião-dentista, em atendimento na VittaUnic" loading="lazy" width="640" height="800" />
+        <div class="doctor__badge">
+          <span class="dot" aria-hidden="true">🦷</span>
+          <div>
+            <strong>Dr. Fernando Gonçalves</strong>
+            <span>Cirurgião-Dentista</span>
+          </div>
+        </div>
+      </div>
+      <div class="doctor__content reveal" data-reveal="right">
+        <span class="section__eyebrow">Conheça o profissional</span>
+        <h2 class="section__title">Dr. Fernando Gonçalves</h2>
+        <p class="doctor__role">Cirurgião-Dentista &middot; Fundador da VittaUnic</p>
+        <p>
+          Apaixonado por devolver a confiança no sorriso das pessoas, o Dr. Fernando
+          Gonçalves conduz cada atendimento com técnica apurada, escuta atenta e
+          dedicação aos detalhes. À frente da VittaUnic, lidera uma odontologia
+          moderna, focada em diagnóstico preciso e resultados naturais.
+        </p>
+        <ul class="doctor__list">
+          <li>Especialização em odontologia estética e reabilitação oral</li>
+          <li>Atendimento individualizado e baseado em evidências</li>
+          <li>Compromisso com conforto, segurança e biossegurança</li>
+        </ul>
+        <a href="#" class="btn btn--accent" data-link="whatsapp">Agendar com o Dr. Fernando</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS DA CLÍNICA ===================== -->
+  <section class="section section--alt" id="diferenciais">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">Por que escolher a VittaUnic?</span>
+        <h2 class="section__title">Uma experiência pensada para cuidar de você</h2>
+        <p class="section__subtitle">
+          Unimos experiência, tecnologia e atendimento próximo para oferecer
+          uma jornada odontológica completa e tranquila.
+        </p>
+      </div>
+
+      <div class="features">
+        <div class="feature reveal">
+          <span class="feature__num">01</span>
+          <h3>Planejamento individual</h3>
+          <p>Cada tratamento é desenhado para os seus objetivos e necessidades.</p>
+        </div>
+        <div class="feature reveal">
+          <span class="feature__num">02</span>
+          <h3>Tecnologia de ponta</h3>
+          <p>Equipamentos modernos para diagnósticos precisos e procedimentos confortáveis.</p>
+        </div>
+        <div class="feature reveal">
+          <span class="feature__num">03</span>
+          <h3>Ambiente acolhedor</h3>
+          <p>Um espaço pensado para o seu bem-estar do início ao fim.</p>
+        </div>
+        <div class="feature reveal">
+          <span class="feature__num">04</span>
+          <h3>Acompanhamento próximo</h3>
+          <p>Você é cuidado em cada etapa, com clareza e atenção total.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow section__eyebrow--light">Depoimentos</span>
+        <h2 class="section__title section__title--light">O que nossos pacientes dizem</h2>
+      </div>
+
+      <div class="cards">
+        <blockquote class="testimonial reveal">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"Excelente atendimento. Me senti seguro desde a primeira consulta com o Dr. Fernando."</p>
+          <cite>— Paciente VittaUnic</cite>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"Minha autoestima mudou completamente depois do tratamento. Recomendo de olhos fechados."</p>
+          <cite>— Paciente VittaUnic</cite>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <div class="testimonial__stars">★★★★★</div>
+          <p>"Profissionalismo e cuidado em cada detalhe. A clínica é incrível e o resultado superou as expectativas."</p>
+          <cite>— Paciente VittaUnic</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta" id="contato">
+    <div class="container cta__inner reveal">
+      <h2>Pronto para transformar o seu sorriso?</h2>
+      <p>Agende hoje a sua avaliação com o Dr. Fernando Gonçalves na VittaUnic.</p>
+      <div class="cta__actions">
+        <a href="#" class="btn btn--light" data-link="whatsapp">Falar no WhatsApp</a>
+        <a href="#" class="btn btn--ghost-light" data-link="instagram">Seguir no Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">Dúvidas frequentes</span>
+        <h2 class="section__title">Perguntas que recebemos com frequência</h2>
+        <p class="section__subtitle">
+          Reunimos as principais dúvidas para você chegar tranquilo à sua avaliação.
+        </p>
+      </div>
+
+      <div class="faq__wrap reveal">
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Como funciona a primeira avaliação?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__a">
+            <p>Na primeira consulta, o Dr. Fernando faz uma avaliação completa da sua saúde bucal, ouve seus objetivos e monta um plano de tratamento individual, explicando cada etapa com clareza.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Vocês atendem convênios?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__a">
+            <p>Trabalhamos com atendimento particular e condições facilitadas. Fale com nossa equipe pelo WhatsApp para conferir as formas de pagamento e parcerias disponíveis.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Quais formas de pagamento posso utilizar?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__a">
+            <p>Aceitamos cartões, Pix e oferecemos opções de parcelamento de acordo com o plano de tratamento. Tudo é combinado de forma transparente antes de iniciar.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Sinto receio de ir ao dentista. Como é o atendimento?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__a">
+            <p>Nosso atendimento é humanizado e sem pressa. Priorizamos o seu conforto e segurança em cada etapa, respeitando o seu tempo e explicando tudo com calma.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Onde fica a clínica VittaUnic?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__a">
+            <p>Estamos no Empresarial Vittá — R. Caetano Lummertz, 115, Sala 1102, Centro, Araranguá/SC. Veja o mapa logo abaixo para chegar com facilidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOCALIZAÇÃO ===================== -->
+  <section class="location" id="localizacao">
+    <div class="container location__inner">
+      <div class="location__info reveal" data-reveal="left">
+        <span class="section__eyebrow">Onde estamos</span>
+        <h2 class="section__title">Venha nos visitar</h2>
+        <p class="location__addr">
+          <strong>Empresarial Vittá</strong><br />
+          R. Caetano Lummertz, 115 — Sala 1102<br />
+          Centro, Araranguá/SC — 88900-045
+        </p>
+        <ul class="location__meta">
+          <li><span aria-hidden="true">🕒</span> Seg a Sex: 8h às 18h &middot; Sáb: 8h às 12h</li>
+          <li><span aria-hidden="true">📍</span> <a href="#" data-link="maps-text">Como chegar (Google Maps)</a></li>
+        </ul>
+        <a href="#" class="btn btn--accent" data-link="whatsapp">Agendar avaliação</a>
+      </div>
+
+      <div class="location__map reveal" data-reveal="right">
+        <iframe
+          title="Mapa da localização da VittaUnic em Araranguá/SC"
+          src="https://maps.google.com/maps?q=R.%20Caetano%20Lummertz%2C%20115%20-%20Centro%2C%20Ararangu%C3%A1%20-%20SC%2C%2088900-045&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="img/vittaunicfundobranco.png" alt="VittaUnic Odontologia Avançada" />
+        <p>Odontologia avançada, humana e feita para você. Cuidando do seu sorriso com a dedicação do Dr. Fernando Gonçalves.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#tratamentos">Tratamentos</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#dr-fernando">Dr. Fernando</a></li>
+          <li><a href="#faq">Dúvidas frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#" data-link="whatsapp-text">WhatsApp</a></li>
+          <li><a href="#" data-link="instagram">Instagram</a></li>
+          <li id="footerAddress">Endereço da clínica</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Atendimento</h4>
+        <ul>
+          <li>Segunda a Sexta: 8h às 18h</li>
+          <li>Sábado: 8h às 12h</li>
+          <li><a href="#" class="btn btn--accent btn--sm" data-link="whatsapp">Agendar agora</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© <span id="year"></span> VittaUnic — Odontologia Avançada. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="#" class="whatsapp-float" data-link="whatsapp" aria-label="Agendar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></svg>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
