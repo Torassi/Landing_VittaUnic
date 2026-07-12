@@ -86,33 +86,39 @@ window.addEventListener("scroll", onScroll, { passive: true });
    ------------------------------------------------------------ */
 const navToggle = document.getElementById("navToggle");
 const nav = document.getElementById("nav");
+const navBackdrop = document.getElementById("navBackdrop");
 
-const closeMenu = () => {
-  nav.classList.remove("is-open");
-  navToggle.setAttribute("aria-expanded", "false");
-  navToggle.setAttribute("aria-label", "Abrir menu");
+const setMenu = (open) => {
+  nav.classList.toggle("is-open", open);
+  if (navBackdrop) navBackdrop.classList.toggle("is-open", open);
+  navToggle.setAttribute("aria-expanded", String(open));
+  navToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+  // Trava o scroll do fundo enquanto o menu está aberto
+  document.body.style.overflow = open ? "hidden" : "";
 };
 
-navToggle.addEventListener("click", () => {
-  const isOpen = nav.classList.toggle("is-open");
-  navToggle.setAttribute("aria-expanded", String(isOpen));
-  navToggle.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
-});
+const closeMenu = () => setMenu(false);
+
+navToggle.addEventListener("click", () =>
+  setMenu(!nav.classList.contains("is-open"))
+);
 
 // Fecha o menu ao clicar em um link
 nav.querySelectorAll(".nav__link").forEach((link) =>
   link.addEventListener("click", closeMenu)
 );
 
-// Fecha ao clicar fora
-document.addEventListener("click", (e) => {
-  if (
-    nav.classList.contains("is-open") &&
-    !nav.contains(e.target) &&
-    !navToggle.contains(e.target)
-  ) {
-    closeMenu();
-  }
+// Fecha ao tocar no overlay
+if (navBackdrop) navBackdrop.addEventListener("click", closeMenu);
+
+// Fecha com a tecla Esc
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && nav.classList.contains("is-open")) closeMenu();
+});
+
+// Garante estado limpo ao voltar para desktop
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 760 && nav.classList.contains("is-open")) closeMenu();
 });
 
 /* ------------------------------------------------------------

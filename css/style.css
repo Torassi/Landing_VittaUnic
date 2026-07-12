@@ -180,6 +180,19 @@ h1, h2, h3, h4 {
   border-bottom-color: var(--line);
 }
 
+/* Overlay do menu mobile (visível só quando o menu abre no celular) */
+.nav-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  background: rgba(20, 32, 42, .55);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s var(--ease), visibility .35s var(--ease);
+}
+.nav-backdrop.is-open { opacity: 1; visibility: visible; }
+
 .header__inner {
   display: flex;
   align-items: center;
@@ -865,21 +878,37 @@ h1, h2, h3, h4 {
 
 @media (max-width: 760px) {
   .header__cta { display: none; }
-  .nav__toggle { display: flex; }
+
+  /* Sem backdrop-filter no mobile: evita que o header vire containing block
+     do menu fixed (bug que deixava o painel com altura do header). */
+  .header,
+  .header.is-scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(255, 255, 255, .97);
+  }
+
+  .nav__toggle { display: flex; position: relative; z-index: 120; }
+
+  .nav-backdrop { display: block; }
 
   .nav {
     position: fixed;
-    inset: 0 0 0 auto;
-    width: min(80%, 330px);
+    top: 0; right: 0; bottom: 0; left: auto;
+    height: 100vh;
+    height: 100dvh;
+    width: min(82%, 330px);
     background: #fff;
-    box-shadow: -12px 0 50px rgba(0,0,0,.16);
+    box-shadow: -12px 0 50px rgba(0, 0, 0, .22);
     transform: translateX(100%);
     transition: transform .4s var(--ease);
-    padding: 6.5rem 2rem 2rem;
+    padding: 5.5rem 2rem 2rem;
+    overflow-y: auto;
+    z-index: 110;
   }
   .nav.is-open { transform: translateX(0); }
-  .nav__list { flex-direction: column; gap: 1.5rem; }
-  .nav__link { font-size: 1.15rem; }
+  .nav__list { flex-direction: column; gap: 1.4rem; }
+  .nav__link { font-size: 1.15rem; display: block; padding: .3rem 0; }
 
   .hero { padding-top: 130px; }
   .hero__highlights { gap: 1.4rem; }
